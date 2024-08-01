@@ -1,11 +1,7 @@
-import { Teste } from "./teste";
+import { ComponentRoutes } from "./routes";
 
 function App() {
-  return (
-    <>
-      <Teste />
-    </>
-  );
+  return <ComponentRoutes />;
 }
 
 export default App;
