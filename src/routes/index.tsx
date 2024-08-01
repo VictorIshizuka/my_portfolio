@@ -3,18 +3,21 @@ import { Home } from "../pages/Home";
 import { SobreMim } from "../pages/SobreMim";
 import { NotFound } from "../pages/NotFound";
 import { MenuLink } from "../components/MenuLink";
-import { Banner } from "../components/Banner";
+import { Footer } from "../components/Footer";
+import { LayoutBase } from "../pages/Layout";
 
 export const ComponentRoutes = (): JSX.Element => {
   return (
     <BrowserRouter>
       <MenuLink />
-      <Banner />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre-mim" element={<SobreMim />} />
+        <Route path="/" element={<LayoutBase />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre-mim" element={<SobreMim />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
