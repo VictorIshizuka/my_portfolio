@@ -4,6 +4,8 @@ import styles from "./PostItem.module.css";
 
 import { IPost } from "../../types/post";
 
+import { Button } from "../Button";
+
 export const PostItem = ({
   title,
   id,
@@ -17,7 +19,7 @@ export const PostItem = ({
           alt="Imagem de capa do post"
         />
         <h2 className={styles.title}>{title}</h2>
-        <button className={styles.buttonRead}>Ler</button>
+        <Button>Ler</Button>
       </div>
     </Link>
   );

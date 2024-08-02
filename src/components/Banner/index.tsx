@@ -1,4 +1,5 @@
 import styles from "./Banner.module.css";
+
 import coloredCircle from "../../assets/circulo_colorido.png";
 import myImage from "../../assets/circulo_colorido.png";
 
@@ -18,6 +19,7 @@ export function Banner() {
         <img
           className={styles.coloredCircle}
           src={coloredCircle}
+          alt=""
           aria-hidden={true}
         />
 
