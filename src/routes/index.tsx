@@ -12,7 +12,7 @@ export const ComponentRoutes = (): JSX.Element => {
       <MenuLink />
       <Routes>
         <Route path="/" element={<LayoutBase />}>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/sobre-mim" element={<SobreMim />} />
         </Route>
         <Route path="*" element={<NotFound />} />

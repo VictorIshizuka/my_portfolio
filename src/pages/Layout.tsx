@@ -4,7 +4,7 @@ import { Banner } from "../components/Banner";
 export const LayoutBase = () => {
   return (
     <>
-      <Banner />;
+      <Banner />
       <Outlet />
     </>
   );
