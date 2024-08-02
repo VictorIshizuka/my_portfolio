@@ -1,10 +1,10 @@
 import styles from "./Home.module.css";
 
-import { IPost } from "../types/post";
+import { IPost } from "../../types/post";
 
-import posts from "./../data/json/posts.json";
+import posts from "../../data/json/posts.json";
 
-import { PostItem } from "../components/PostItem";
+import { PostItem } from "../../components/PostItem";
 
 export const Home = (): JSX.Element => {
   return (

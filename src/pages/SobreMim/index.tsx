@@ -1,9 +1,9 @@
 import styles from "./SobreMim.module.css";
 
-import { LayoutPost } from "../components/LayoutPost";
+import { LayoutPost } from "../../components/LayoutPost";
 
-import banner from "./../assets/sobre_mim_capa.png";
-import imageSobreMim from "./../assets/circulo_colorido.png";
+import banner from "./../../assets/sobre_mim_capa.png";
+import imageSobreMim from "./../../assets/circulo_colorido.png";
 
 export const SobreMim = (): JSX.Element => {
   return (
